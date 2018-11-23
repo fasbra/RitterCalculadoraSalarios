@@ -9,6 +9,13 @@
             _funcionario = funcionario;
         }
 
+        public decimal CalculaDesconto()
+        {
+            var salario = _funcionario.Salario;
+            var cargo = _funcionario.Cargo;
+
+            return salario * (salario > cargo.ValorCorte ? cargo.MaiorDesconto : cargo.MenorDesconto);
+        }
 
     }
 }

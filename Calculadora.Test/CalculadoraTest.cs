@@ -10,6 +10,8 @@ namespace Calculadora.Test
             var funcionario = new Funcionario("Felipe", 1000m, new Desenvolvedor());
 
             var calculadora = new Calculadora(funcionario);
+
+            Assert.Equal(100m, calculadora.CalculaDesconto());
         }
     }
 }
