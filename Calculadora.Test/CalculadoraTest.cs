@@ -7,7 +7,7 @@ namespace Calculadora.Test
         [Fact]
         public void Calculadora_Deve_Gerar_Desconto_Desenvolvedor()
         {
-            var funcionario = new Funcionario("Felipe", 1000m, Cargo.Desenvolvedor);
+            var funcionario = new Funcionario("Felipe", 1000m, new Desenvolvedor());
 
             var calculadora = new Calculadora(funcionario);
         }

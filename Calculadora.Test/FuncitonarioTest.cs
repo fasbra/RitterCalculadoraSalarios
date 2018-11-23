@@ -9,7 +9,7 @@ namespace Calculadora.Test
         {
             var nome = "Felipe";
             var salario = 1000m;
-            var cargo = Cargo.Desenvolvedor;
+            var cargo = new Desenvolvedor();
 
             var funcionario = new Funcionario(nome, salario, cargo);
 
