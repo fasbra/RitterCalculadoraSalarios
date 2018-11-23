@@ -7,7 +7,15 @@ namespace Calculadora.Test
         [Fact]
         public void Funcionario_Deve_Ser_Criado()
         {
-            var funcionario = new Funcionario();
+            var nome = "Felipe";
+            var salario = 1000m;
+            var cargo = Cargo.Desenvolvedor;
+
+            var funcionario = new Funcionario(nome, salario, cargo);
+
+            Assert.Equal(nome, funcionario.Nome);
+            Assert.Equal(salario, funcionario.Salario);
+            Assert.Equal(cargo, funcionario.Cargo);
         }
     }
 }
